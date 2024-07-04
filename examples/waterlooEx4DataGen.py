@@ -3,11 +3,11 @@ import numpy as np
 # Number of data points
 n = 100000
 
-f = np.random.uniform(0.1, 10, n)
-d = np.random.uniform(0.1, 10, n)
-l = np.random.uniform(0.1, 10, n)
-p = np.random.uniform(0.1, 10, n)
-v = np.random.uniform(0.1, 10, n)
+f = np.random.uniform(1, 10, n)
+d = np.random.uniform(1, 10, n)
+l = np.random.uniform(1, 10, n)
+p = np.random.uniform(1, 10, n)
+v = np.random.uniform(1, 10, n)
 
 pf = f * (l/d) * ((p * v * v)/2)
 
