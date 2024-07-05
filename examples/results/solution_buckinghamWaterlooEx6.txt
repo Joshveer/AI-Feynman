@@ -1,0 +1,3 @@
+Test Set Error, Cumulative Log, Complexity, Input Set Error, Symbolic Expression
+1.5837235499157396e-07 -22.597597749819197 -2259759.7749819197 1.0 1.5755973705286781e-07 -1.000000000000*(0+1)
+Best Result: Noise Level: 0 | Equation: -1.000000000000*(0+1) with error of 1.5837235499157396e-07 | Solution time: 33.87 seconds
