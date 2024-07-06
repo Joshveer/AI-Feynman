@@ -10,7 +10,7 @@ x = np.random.uniform(1, 10, p)
 kb = np.random.uniform(1, 10, p)
 temp = np.random.uniform(1, 10, p)
 
-n = n0 * (2.71828 ** ((-(m * g * x))/((kb * temp))))
+n = n0 * (np.e ** (((-m * g * x))/((kb * temp))))
 
 pi1 = (kb * temp) / (m * g * x)
 pi2 = n
