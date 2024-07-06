@@ -2,10 +2,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 noise_levels = [0]
-normal_errors = [0.0024406534653992327]
-buckingham_errors = [1.8118504342111766e-07]
-normal_mins = [312.71]
-buckingham_mins = [87.92]
+normal_errors = [20.960818623464313]
+buckingham_errors = [20.95978018214704]
+normal_mins = [421.52]
+buckingham_mins = [121]
 
 barWidth = 0.10
 r1 = np.arange(len(noise_levels))
