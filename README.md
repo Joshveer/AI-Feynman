@@ -184,7 +184,7 @@ It can be clearly noted that Buckingham π implementations tends to be 3-6 times
 
 Although the parent equation in this example is considerably more complex leading to larger solution times for both, Buckingham π implementations allow for less error and to be marginally faster than the normal data files. With the same notes from the previous example, it can be added that the computational power of the machine will obviously further underline the difference in the times and errors between the two.
 
-## Example 3, 4, & 6
+## Examples 3, 4, & 6
 
 Same results as expected.
 
