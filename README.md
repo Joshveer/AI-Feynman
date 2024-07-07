@@ -68,8 +68,111 @@ Noise Level: 0 | Equation: 0.000000000000+((x1+x1)/(x0*x0))
 
 where x0 is π₁ & x1 is π₂
 
-
 ![Performance Graphs](Example2Graphs.png)
+
+### Example 3
+
+Model parameters: BF_try_time=100, BF_ops_file_type="7ops.txt", polyfit_deg=3, NN_epochs=500
+
+#### Expected
+
+Normal: gPE = (gc * m1 * m2) * ((1/r1) - (1/r2))
+
+Buckingham π: π₁ = (π₃π₂ - 1)/π₃
+
+#### Found
+
+##### Equation found with normal:
+
+Noise Level: 0 | Equation: 0.000000000000+((((x3)**(-1)-(x2)**(-1)))*(-((x0*x1)*x4)))
+
+where x0 is m1, x1 is m2, x2 is r1, x3 is r2, & x4 is gc
+
+##### Equation found with Buckingham π:
+
+Noise Level: 0 | Equation: 0.000000000000+((x0/x1)+(-x0))
+
+where x0 is π₂ & x1 is π₃
+
+![Performance Graphs](Example3Graphs.png)
+
+### Example 4
+
+Model parameters: BF_try_time=100, BF_ops_file_type="7ops.txt", polyfit_deg=3, NN_epochs=500
+
+#### Expected
+
+Normal: pf = f * (l/d) * ((p * v * v)/2)
+
+Buckingham π: π₁ = π₃π₂/2
+
+#### Found
+
+##### Equation found with normal:
+
+Noise Level: 0 | Equation: asin(-1.489095888275+sqrt(sqrt(x1)))
+
+where x0 is f, x1 is d, x2 is l, x3 is p, & x4 is v
+
+##### Equation found with Buckingham π:
+
+Noise Level: 0 | Equation: 0.500000000000*(x1*x0)
+
+where x0 is π₂ & x1 is π₃
+
+![Performance Graphs](Example4Graphs.png)
+
+### Example 5
+
+Model parameters: BF_try_time=100, BF_ops_file_type="7ops.txt", polyfit_deg=3, NN_epochs=500
+
+#### Expected
+
+Normal: n = n0 * (np.e ** (((-m * g * x))/((kb * temp))))
+
+Buckingham π: π₂ = π₃e^(-1/π₁)
+
+#### Found
+
+##### Equation found with normal:
+
+Noise Level: 0 | Equation: asin(-0.000000578547+((((x4/((x1*x2)*x3)))*x5)*((((x4/((x1*x2)*x3)))*x5)*((((x4/((x1*x2)*x3)))*x5)*((((x4/((x1*x2)*x3)))*x5)*x0)))))
+
+where x0 is n0, x1 is m, x2 is g, x3 is x, x4 is kb, & x5 is temp
+
+##### Equation found with Buckingham π:
+
+Noise Level: 0 | Equation: asin(-0.000000613685+(x1*(x0*(x0*(x0*x0)))))
+
+where x0 is π₁ & x1 is π₃
+
+![Performance Graphs](Example5Graphs.png)
+
+### Example 6
+
+Model parameters: BF_try_time=100, BF_ops_file_type="7ops.txt", polyfit_deg=3, NN_epochs=500
+
+#### Expected
+
+Normal: f = (-g * m1 * m2) / (r * r)
+
+Buckingham π: π₁ = -π₂
+
+#### Found
+
+##### Equation found with normal:
+
+Noise Level: 0 | Equation: 0.000000000000+((x1*x2)*(x0/(x3*(-x3))))
+
+where x0 is g, x1 is m1, x2 is m2, & x3 is r
+
+##### Equation found with Buckingham π:
+
+Noise Level: 0 | Equation: -1.000000000000*(0+1)*x0
+
+where x0 is π₂
+
+![Performance Graphs](Example6Graphs.png)
 
 # Conclusion
 
@@ -80,6 +183,10 @@ It can be clearly noted that Buckingham π implementations tends to be 3-6 times
 ## Example 2
 
 Although the parent equation in this example is considerably more complex leading to larger solution times for both, Buckingham π implementations allow for less error and to be marginally faster than the normal data files. With the same notes from the previous example, it can be added that the computational power of the machine will obviously further underline the difference in the times and errors between the two.
+
+## Example 3
+
+
 
 # Citation
 
